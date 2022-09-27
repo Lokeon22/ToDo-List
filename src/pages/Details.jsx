@@ -93,24 +93,24 @@ export function Details() {
         src={wolf}
         className="absolute w-[350px] top-[-130px] left-0 sm:top-0 sm:left-[-370px] contrast-50 opacity-80"
       />
-      <h2 className="text-white uppercase text-3xl  mb-8 text-center md:text-start">
+      <h2 className="text-white uppercase md:text-3xl text-2xl dark:text-black mb-8 text-center md:text-start flex gap-6">
         Lista de tarefas diárias
         <img
           src={moon}
-          className="w-8 contrast-0 cursor-pointer"
+          className="w-7 contrast-0 cursor-pointer"
           id="moon"
           onClick={themeSwitch}
         />
         <img
           src={light}
-          className="w-8 contrast-0 cursor-pointer"
+          className="w-7 contrast-0 cursor-pointer"
           id="light"
           onClick={themeSwitch}
         />
       </h2>
       <section className="flex justify-center items-center gap-2">
         <input
-          className="text-white w-full sm:w-72 py-1 px-1 flex justify-center items-center bg-transparent outline-0 border-b-2"
+          className="text-white dark:text-black dark:placeholder:text-black w-full sm:w-72 py-1 px-1 flex justify-center items-center bg-transparent outline-0    border-b-2 dark:border-b-black"
           placeholder="Crie sua meta"
           type="text"
           value={title}
@@ -118,7 +118,7 @@ export function Details() {
         />
         <button
           type="button"
-          className="text-white flex justify-center items-center hover:text-yellow-400"
+          className="text-white flex justify-center items-center hover:text-yellow-400 dark:text-black dark:hover:text-red-500"
           onClick={createNote}
         >
           <PlusCircle size={25} />
@@ -129,7 +129,7 @@ export function Details() {
           notes.map((note, index) => (
             <div
               key={index}
-              className="flex gap-2 bg-black mt-5 py-2 px-2 rounded w-full sm:w-[600px] shadow-lg shadow-white/20"
+              className="flex gap-2 bg-black mt-5 py-2 px-2 rounded w-full sm:w-[600px] shadow-lg shadow-white/20  dark:shadow-lg dark:shadow-black/60"
             >
               <button
                 className="flex items-center py-1 px-1 text-xl gap-1.5"
